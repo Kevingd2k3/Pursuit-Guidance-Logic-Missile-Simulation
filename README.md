@@ -61,13 +61,6 @@ Where yaw ($\psi$) and pitch ($\theta$) are calculated from the current velocity
 
 ##  License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-"""
-
-# Write the content to README.md (Overwrites existing file to ensure cleanliness)
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print("✅ README.md has been successfully updated with the new text and LaTeX equations!")
 
 ## 📂 Project Structure
 
