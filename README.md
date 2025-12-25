@@ -62,14 +62,14 @@ Where yaw ($\psi$) and pitch ($\theta$) are calculated from the current velocity
 ##  License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 📦 Pursuit-Guidance-Logic
- ┣ 📜 Giuded_Missile_Trace_n_Chase_Sim.py  # Main simulation script
- ┣ 📜 F15.stl                                # Target 3D Model
- ┣ 📜 Missile.stl                            # Missile 3D Model
- ┣ 🎥 Guided Missile Simulation.mp4          # Demo Video
- ┣ 📕 Report.pdf                             # Detailed technical report
- ┣ ⚖️ LICENSE                                # MIT License
- ┗ ℹ️ README.md                              # Documentation
+ ┣  Giuded_Missile_Trace_n_Chase_Sim.py  # Main simulation script
+ ┣  F15.stl                                # Target 3D Model
+ ┣  Missile.stl                            # Missile 3D Model
+ ┣  Guided Missile Simulation.mp4          # Demo Video
+ ┣  Report.pdf                             # Detailed technical report
+ ┣  LICENSE                                # MIT License
+ ┗  README.md                              # Documentation
