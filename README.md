@@ -36,12 +36,12 @@ This simulation demonstrates the implementation of **Pure Pursuit Guidance** log
     [Missile STL File](Missile.stl)
 
 
-## 🎮 Controls
+##  Controls
 * The simulation runs automatically upon launch.
 * The camera angle is preset to an optimal viewing position.
 * Use the standard Matplotlib toolbar to zoom, pan, or rotate the 3D view manually.
 
-## 🧠 Technical Details
+##  Technical Details
 
 ### Guidance Law
 The missile utilizes a Pure Pursuit algorithm where the velocity vector $\vec{V}_m$ is aligned with the Line of Sight (LOS) vector to the target $\vec{P}_t$:
@@ -55,11 +55,11 @@ $$ R = R_z(\psi) \cdot R_y(\theta) $$
 
 Where yaw ($\psi$) and pitch ($\theta$) are calculated from the current velocity components $(v_x, v_y, v_z)$.
 
-## 🤝 Acknowledgements
+##  Acknowledgements
 * **Original Inspiration:** Based on the kinematic concepts from [Mention Original Repo Name/Link Here if applicable].
 * **Libraries:** Built using Matplotlib and NumPy-STL.
 
-## 📄 License
+##  License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 """
 
@@ -68,3 +68,15 @@ with open("README.md", "w", encoding="utf-8") as f:
     f.write(readme_content)
 
 print("✅ README.md has been successfully updated with the new text and LaTeX equations!")
+
+## 📂 Project Structure
+
+```text
+📦 Pursuit-Guidance-Logic
+ ┣ 📜 Giuded_Missile_Trace_n_Chase_Sim.py  # Main simulation script
+ ┣ 📜 F15.stl                                # Target 3D Model
+ ┣ 📜 Missile.stl                            # Missile 3D Model
+ ┣ 🎥 Guided Missile Simulation.mp4          # Demo Video
+ ┣ 📕 Report.pdf                             # Detailed technical report
+ ┣ ⚖️ LICENSE                                # MIT License
+ ┗ ℹ️ README.md                              # Documentation
