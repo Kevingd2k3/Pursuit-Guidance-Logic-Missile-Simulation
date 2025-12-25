@@ -35,25 +35,36 @@ This simulation demonstrates the implementation of **Pure Pursuit Guidance** log
     [F15 STL File](F15.stl)
     [Missile STL File](Missile.stl)
 
-## Controls
 
-The simulation runs automatically upon launch.The camera angle is preset to an optimal viewing position.Use the standard Matplotlib toolbar to zoom, pan, or rotate the 3D view manually.
+## 🎮 Controls
+* The simulation runs automatically upon launch.
+* The camera angle is preset to an optimal viewing position.
+* Use the standard Matplotlib toolbar to zoom, pan, or rotate the 3D view manually.
 
-**Technical Details**
+## 🧠 Technical Details
 
-* **Guidance Law** 
+### Guidance Law
 The missile utilizes a Pure Pursuit algorithm where the velocity vector $\vec{V}_m$ is aligned with the Line of Sight (LOS) vector to the target $\vec{P}_t$:
-$\vec{V}_{missile} = V_{mag} \times \frac{\vec{P}_{target} - \vec{P}_{missile}}{||\vec{P}_{target} - \vec{P}_{missile}||}$
-* **Coordinate Transformation**
+
+$$ \vec{V}_{new} = V_{mag} \cdot \frac{\vec{P}_t - \vec{P}_m}{||\vec{P}_t - \vec{P}_m||} $$
+
+### Coordinate Transformation
 To visualize the 3D models correctly, the static mesh is rotated using a combined Euler rotation matrix derived from the velocity vector:
-$$ R = R_z(\psi) \cdot R_y(\theta) $$Where yaw ($\psi$) and pitch ($\theta$) are calculated from the current velocity components $(v_x, v_y, v_z)$.
 
-##  Acknowledgements
+$$ R = R_z(\psi) \cdot R_y(\theta) $$
 
+Where yaw ($\psi$) and pitch ($\theta$) are calculated from the current velocity components $(v_x, v_y, v_z)$.
+
+## 🤝 Acknowledgements
 * **Original Inspiration:** Based on the kinematic concepts from [Mention Original Repo Name/Link Here if applicable].
 * **Libraries:** Built using Matplotlib and NumPy-STL.
 
-##  License
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+"""
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+# Write the content to README.md (Overwrites existing file to ensure cleanliness)
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
 
+print("✅ README.md has been successfully updated with the new text and LaTeX equations!")
